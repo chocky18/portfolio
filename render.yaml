@@ -16,5 +16,6 @@ services:
     envVars:
       - key: DJANGO_ENVIRONMENT
         value: production
-    buildCommand: python manage.py collectstatic --noinput
+    buildCommand: bash setup.sh
     startCommand: gunicorn mysite.wsgi --bind 0.0.0.0:$PORT
+

@@ -1,0 +1,474 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Naresh Tinnaluri's Portfolio</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'portfolio/assets/favicon.ico' %}" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'portfolio/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100 bg-light">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="{% url 'index' %}"><span class="fw-bolder text-primary">Naresh Tinnaluri</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'resume' %}">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'projects' %}">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Any Queries</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'details' %}">Contact</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Projects Section-->
+            <section class="py-5">
+                <div class="container px-5 mb-5">
+                    <div class="text-center mb-5">
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-11 col-xl-9 col-xxl-8">
+<!-- Project Card 1-->
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="d-flex align-items-center">
+            <div class="p-5">
+                <h2 class="fw-bolder">SuccessSeeker and Harmonia</h2>
+                <p>
+                    <strong>Gemini API Developer and Generative AI Agents Developer Contest by NVIDIA and LangChain:</strong>
+                    <br><br>
+                    <em>SuccessSeeker:</em> An AI-powered interview preparation tool offering customizable practice sessions, detailed feedback, progress tracking, and expert mock interviews using LLMs, LangChain, Flutter, and AWS.
+                    <br><br>
+                    <em>Harmonia:</em> Your Personal AI Companion. This virtual assistant manages daily reminders, engages in meaningful conversations, provides diet and recipe suggestions, shares motivational quotes and affirmations, and supports daily habits for mental health.
+                </p>
+            </div>
+            <div class="img-container">
+                <img class="img-fluid" src="https://miro.medium.com/v2/resize:fit:1400/1*SMPsG_Wv0RltJVHfV-uZpg.png" alt="AI Agents Image" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Project Card 2-->
+
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="d-flex align-items-center">
+            <div class="p-5">
+                <h2 class="fw-bolder">Auto Form Blaster</h2>
+                <p>
+                    <strong>Workplete (Persist Ventures)</strong>
+                    <br><br>
+                    <strong>AI Engineer</strong>
+                    <br><br>
+                    <em>Auto Form Blaster:</em> An AI-powered application that automates filling and submitting forms across multiple platforms simultaneously. Implemented advanced technologies including Langchains, LLM GPT-3.5, YOLO, and CLIP for tasks in natural language processing (NLP) and computer vision.
+                </p>
+                <ul>
+                    <li>Implemented web automation using Playwright to streamline form-filling processes.</li>
+                    <li>Utilized the PyQt framework to create an intuitive and user-friendly interface for improved user interaction.</li>
+                    <li>Employed RetrievalQA for enhanced question-answering capabilities.</li>
+                    <li>Utilized document loaders like PyPDFLoader and TextLoader for efficient document processing.</li>
+                    <li>Employed the CharacterTextSplitter and OpenAIEmbeddings to extract valuable insights from text data.</li>
+                    <li>Applied YOLO for selective element detection, optimizing data extraction.</li>
+                    <li>Trained and deployed the YOLO model on AWS, creating endpoints and utilizing Lambda functions for superior selective element detection.</li>
+                    <li>Established an endpoint for the Flamingo model, a vision language model, to identify and process elements with advanced capabilities.</li>
+                </ul>
+            </div>
+
+<!--                <iframe width="100%" height="400" src="https://youtu.be/r-UA55OORXk?si=1gxKBguqJz6UOJk7" frameborder="0" allowfullscreen></iframe>-->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/r-UA55OORXk?si=0mMl3yS_0M1N9SqM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+    </div>
+</div>
+
+<!-- Project Card 3-->
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="d-flex align-items-center">
+            <div class="p-5">
+                <h2 class="fw-bolder">Truck Tracking and Counting using YOLO V8</h2>
+                <p>
+                    <strong>Upwork · Freelance</strong>
+                    <br><br>
+                    <strong>Computer Vision Research Engineer</strong>
+                    <br><br>
+<!--                    <em>Auto Form Blaster:</em> An AI-powered application that automates filling and submitting forms across multiple platforms simultaneously. Implemented advanced technologies including Langchains, LLM GPT-3.5, YOLO, and CLIP for tasks in natural language processing (NLP) and computer vision.-->
+                </p>
+                <ul>
+                    <li>Successfully trained and fine-tuned the YOLO V8 model for tracking and counting trucks in industrial settings</li>
+                    <li>Deployed the model on a cloud-based platform, ensuring accessibility and scalability.</li>
+                    <li>Conducted rigorous testing and evaluation to ensure the model's accuracy and efficiency in real-world applications.</li>
+                    <li> Integrated real-time monitoring and reporting functionalities to enhance tracking capabilities.</li>
+                                    </ul>
+            </div>
+            <div class="img-container">
+                <img class="img-fluid" src="https://img-c.udemycdn.com/course/750x422/2702498_035e.jpg" alt="Object Track & counting" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Project Card 4-->
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="d-flex align-items-center">
+            <div class="p-5">
+                <h2 class="fw-bolder">Face Recognition with Real-Time Attendance and User-Friendly Interface</h2>
+                <p>
+                    <strong>Upwork · Freelance</strong>
+                    <br><br>
+                    <strong>Computer Vision Research Engineer</strong>
+                    <br><br>
+<!--                    <em>Auto Form Blaster:</em> An AI-powered application that automates filling and submitting forms across multiple platforms simultaneously. Implemented advanced technologies including Langchains, LLM GPT-3.5, YOLO, and CLIP for tasks in natural language processing (NLP) and computer vision.-->
+                </p>
+                <ul>
+                    <li>Developed an API service for the attendance system to facilitate real-time tracking and data management.</li>
+                    <li>Implemented face recognition using YOLOv5, ensuring accurate and efficient detection of individuals.</li>
+                    <li>Created a visitor identification system by extracting features from detections and cross-checking with a database.</li>
+                    <li> Conducted comprehensive system testing to ensure reliability, accuracy, and user-friendliness.</li>
+                                    </ul>
+            </div>
+            <div class="img-container">
+                <img class="img-fluid" src="https://www.cs.cmu.edu/~dst/FaceDemo/resources/demo-layout.png" alt="Object recognition" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Project Card 5-->
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="d-flex align-items-center">
+            <div class="p-5">
+                <h2 class="fw-bolder">Research on Deep Learning-Based Task Scheduling in Mobile Edge Computing</h2>
+                <p>
+                    <strong>Aristocrat</strong>
+                    <br><br>
+                    <strong>Deep Learning Researcher</strong>
+                    <br><br>
+<!--                    <em>Auto Form Blaster:</em> An AI-powered application that automates filling and submitting forms across multiple platforms simultaneously. Implemented advanced technologies including Langchains, LLM GPT-3.5, YOLO, and CLIP for tasks in natural language processing (NLP) and computer vision.-->
+                </p>
+                <ul>
+                    <li>- Conducted in-depth research on the implementation of deep learning techniques for optimizing task scheduling within the context of Mobile Edge Computing.</li>
+<!--                    <li>Implemented face recognition using YOLOv5, ensuring accurate and efficient detection of individuals.</li>-->
+<!--                    <li>Created a visitor identification system by extracting features from detections and cross-checking with a database.</li>-->
+<!--                    <li> Conducted comprehensive system testing to ensure reliability, accuracy, and user-friendliness.</li>-->
+                                    </ul>
+            </div>
+            <div class="img-container">
+                <img class="img-fluid" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/0*24ekr0S7cAGAhUsz" alt="Mobile edge computing" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Project Card 6-->
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="d-flex align-items-center">
+            <div class="p-5">
+                <h2 class="fw-bolder"> Driverless Torpedo Track Visualization and Real-Time Instruction</h2>
+                <p>
+                    <strong>ZestIoT: IoT/AI powered connected operations platform </strong>
+                    <br><br>
+                    <strong>Computer Vision Engineer</strong>
+                    <br><br>
+<!--                    <em>Auto Form Blaster:</em> An AI-powered application that automates filling and submitting forms across multiple platforms simultaneously. Implemented advanced technologies including Langchains, LLM GPT-3.5, YOLO, and CLIP for tasks in natural language processing (NLP) and computer vision.-->
+                </p>
+                <ul>
+                    <li>- Spearheaded research and development efforts for the visualization of driverless torpedoes' tracks.</li>
+                    <li>Utilized object detection techniques, specifically YOLO, to identify objects along the track.</li>
+                    <li>Implemented dynamic Region of Interest (ROI) methods to provide real-time instructions, including horn and brake signals.</li>
+                    <li> Engaged in semantic segmentation for a more comprehensive understanding of the environment using BiSeNet V2.</li>
+                                    </ul>
+            </div>
+            <div class="img-container">
+                <img class="img-fluid" src="https://media.springernature.com/lw685/springer-static/image/chp%3A10.1007%2F978-3-030-41404-7_45/MediaObjects/480742_1_En_45_Fig7_HTML.png" alt="Rail track" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Project Card 7-->
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="d-flex align-items-center">
+            <div class="p-5">
+                <h2 class="fw-bolder">Face Masking (Masking Faces) Using YOLO with Face Coordinate Mapping</h2>
+                <p>
+                    <strong>ZestIoT: IoT/AI powered connected operations platform</strong>
+                    <br><br>
+                    <strong>Computer Vision Engineer</strong>
+                    <br><br>
+<!--                    <em>Auto Form Blaster:</em> An AI-powered application that automates filling and submitting forms across multiple platforms simultaneously. Implemented advanced technologies including Langchains, LLM GPT-3.5, YOLO, and CLIP for tasks in natural language processing (NLP) and computer vision.-->
+                </p>
+                <ul>
+                    <li>Developed a face masking system using YOLO for face detection.</li>
+                    <li> Accurately identified and mapped the coordinates of faces within images.</li>
+                    <li>Implemented a masking mechanism to protect the privacy of individuals by concealing their faces with precision.</li>
+<!--                    <li> Conducted comprehensive system testing to ensure reliability, accuracy, and user-friendliness.</li>-->
+                                    </ul>
+            </div>
+            <div class="img-container">
+                <img class="img-fluid" src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/49647129/original/50b3952f2fcb3e81874e1aca222281240d11b934/blur-faces-objects-brands-or-anything-else-in-your-video.png" alt="Masking" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Project Card 8-->
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="d-flex align-items-center">
+            <div class="p-5">
+                <h2 class="fw-bolder">Computer Vision Algorithms for Object Recognition (SSD and YOLO)</h2>
+                <p>
+                    <strong>ZestIoT: IoT/AI powered connected operations platform</strong>
+                    <br><br>
+                    <strong>Computer Vision Engineer</strong>
+                    <br><br>
+<!--                    <em>Auto Form Blaster:</em> An AI-powered application that automates filling and submitting forms across multiple platforms simultaneously. Implemented advanced technologies including Langchains, LLM GPT-3.5, YOLO, and CLIP for tasks in natural language processing (NLP) and computer vision.-->
+                </p>
+                <ul>
+                    <li>- - Contributed to the development and implementation of computer vision algorithms with a focus on object recognition using both SSD and YOLO frameworks</li><!--                    <li>Implemented face recognition using YOLOv5, ensuring accurate and efficient detection of individuals.</li>-->
+<!--                    <li>Created a visitor identification system by extracting features from detections and cross-checking with a database.</li>-->
+<!--                    <li> Conducted comprehensive system testing to ensure reliability, accuracy, and user-friendliness.</li>-->
+                                    </ul>
+            </div>
+            <div class="img-container">
+                <img class="img-fluid" src="https://cdn-images-1.medium.com/max/1000/1*GmJiirxTSuSVrh-r7gtJdA.png" alt="SSD Object recognition" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Project Card 9-->
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="d-flex align-items-center">
+            <div class="p-5">
+                <h2 class="fw-bolder">Speed Tracking for Object Detection (Estimating Vehicle Speed at Each Frame)</h2>
+                <p>
+                    <strong>ZestIoT: IoT/AI powered connected operations platform</strong>
+                    <br><br>
+                    <strong>Computer Vision Engineer</strong>
+                    <br><br>
+<!--                    <em>Auto Form Blaster:</em> An AI-powered application that automates filling and submitting forms across multiple platforms simultaneously. Implemented advanced technologies including Langchains, LLM GPT-3.5, YOLO, and CLIP for tasks in natural language processing (NLP) and computer vision.-->
+                </p>
+                <ul>
+                    <li>Implemented a speed tracking system to accurately track objects, particularly vehicles, in real-time.</li><!--                    <li>Implemented face recognition using YOLOv5, ensuring accurate and efficient detection of individuals.</li>-->
+                    <li>Employed frame-by-frame analysis to estimate the speed of each detected vehicle, providing valuable insights for various applications.</li>
+<!--                    <li> Conducted comprehensive system testing to ensure reliability, accuracy, and user-friendliness.</li>-->
+                                    </ul>
+            </div>
+            <div class="img-container">
+                <img class="img-fluid" src="https://blog.roboflow.com/content/images/2024/04/image-457.webp" alt="Speed tracker" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Project Card 10-->
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="d-flex align-items-center">
+            <div class="p-5">
+                <h2 class="fw-bolder">Deployment of Custom ONNX Model on NVIDIA Jetson Nano</h2>
+                <p>
+                    <strong>ZestIoT: IoT/AI powered connected operations platform</strong>
+                    <br><br>
+                    <strong>Computer Vision Engineer</strong>
+                    <br><br>
+<!--                    <em>Auto Form Blaster:</em> An AI-powered application that automates filling and submitting forms across multiple platforms simultaneously. Implemented advanced technologies including Langchains, LLM GPT-3.5, YOLO, and CLIP for tasks in natural language processing (NLP) and computer vision.-->
+                </p>
+                <ul>
+                    <li>Successfully deployed a custom ONNX model on the NVIDIA Jetson Nano platform, ensuring efficient and optimized execution of the model for specific tasks.</li><!--                    <li>Implemented face recognition using YOLOv5, ensuring accurate and efficient detection of individuals.</li>-->
+<!--                    <li>Employed frame-by-frame analysis to estimate the speed of each detected vehicle, providing valuable insights for various applications.</li>-->
+<!--                    <li> Conducted comprehensive system testing to ensure reliability, accuracy, and user-friendliness.</li>-->
+                                    </ul>
+            </div>
+            <div class="img-container">
+                <img class="img-fluid" src="https://pyimagesearch.com/wp-content/uploads/2020/03/nano_config_header.png" alt="jetson nano" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Project Card 11-->
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="d-flex align-items-center">
+            <div class="p-5">
+                <h2 class="fw-bolder">Development of Palletizer Application (Flutter)</h2>
+                <p>
+                    <strong>Artenal </strong>
+                    <br><br>
+                    <strong>Computer Vision Engineer</strong>
+                    <br><br>
+<!--                    <em>Auto Form Blaster:</em> An AI-powered application that automates filling and submitting forms across multiple platforms simultaneously. Implemented advanced technologies including Langchains, LLM GPT-3.5, YOLO, and CLIP for tasks in natural language processing (NLP) and computer vision.-->
+                </p>
+                <ul>
+                    <li>Research and Development of Computer Vision Algorithms for Object Recognition (SSD MobileNet)
+- Conducted research and actively participated in the development of computer vision algorithms, with a specific focus on object recognition using the SSD MobileNet framework.</li>
+<!--                    <li>Implemented face recognition using YOLOv5, ensuring accurate and efficient detection of individuals.</li>-->
+<!--                    <li>Created a visitor identification system by extracting features from detections and cross-checking with a database.</li>-->
+                   <br><br>
+
+                    <strong> Development of Palletizer Application (Flutter)</strong>
+                    <li>Collaborated within a team of three to design, develop, and deliver the company's palletizer application using the Flutter framework, ensuring a successful project completion.
+                    <li>Project 1: Research and Development of Computer Vision Algorithms for Object Recognition (SSD MobileNet) - Conducted research and actively participated in the development of computer vision algorithms, with a specific focus on object recognition using the SSD MobileNet framework. </li>
+                    <li>Project 2: Development of Palletizer Application (Flutter) - Collaborated within a team of three to design, develop, and deliver the company's palletizer application using the Flutter framework, ensuring a successful project completion.</li>
+</li>
+                                    </ul>
+            </div>
+            <div class="img-container">
+                <img class="img-fluid" src="https://www.expertinasia.com/assets/img/service/Flutter.png" alt="FLutter" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Project Card 12-->
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="d-flex align-items-center">
+            <div class="p-5">
+                <h2 class="fw-bolder">ERP Software System</h2>
+                <p>
+                    <strong>SMG InfoTech </strong>
+                    <br><br>
+                    <strong>Python Developer</strong>
+                    <br><br>
+<!--                    <em>Auto Form Blaster:</em> An AI-powered application that automates filling and submitting forms across multiple platforms simultaneously. Implemented advanced technologies including Langchains, LLM GPT-3.5, YOLO, and CLIP for tasks in natural language processing (NLP) and computer vision.-->
+                </p>
+                <ul>
+                    <li>Developed and optimized the DSC (Display Student Certificate) system, resulting in a 25% reduction in processing time.</li>
+                    <li>This streamlined the display and management of student certificates, enhancing operational efficiency and user satisfaction.</li>
+                    <li>Implemented the ILP (Individual Login Provider):</li>
+                    <li> Successfully elevated user authentication and access control fortifying security measures.</li>
+                    <li> Enhanced security protocols further, leading to seamless user experiences and heightened data protection.</li>
+                                    </ul>
+            </div>
+            <div class="img-container">
+                <img class="img-fluid" src="https://contentstatic.techgig.com/photo/82905582/5-must-have-python-developer-skills-to-be-successful.jpg?91397" alt="Python" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Project Card 13-->
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="d-flex align-items-center">
+            <div class="p-5">
+                <h2 class="fw-bolder">Building BCI</h2>
+                <p>
+                    <strong>Nirmata Neurotech </strong>
+                    <br><br>
+                    <strong>Founder & AI Researcher</strong>
+                    <br><br>
+<!--                    <em>Auto Form Blaster:</em> An AI-powered application that automates filling and submitting forms across multiple platforms simultaneously. Implemented advanced technologies including Langchains, LLM GPT-3.5, YOLO, and CLIP for tasks in natural language processing (NLP) and computer vision.-->
+                </p>
+                <ul>
+                    <li>with a primary focus on building a cutting-edge Brain-Computer Interface (BCI). Our ongoing efforts involve decoding thoughts into semantic text and seamlessly integrating them with advanced VR technology. This dedication reflects our commitment to pushing the boundaries of innovation and creating transformative solutions in the field of neurotechnology.</li>
+                                    </ul>
+            </div>
+            <div class="img-container">
+                <img class="img-fluid" src="{% static 'portfolio/assets/1707559505313.jpeg' %}" alt="..." />
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .img-container {
+        max-width: 300px;
+        max-height: 400px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-container img {
+        width: 100%;
+        height: auto;
+    }
+</style>
+
+
+                        </div>
+                        <div class="icon-links">
+    <a href="https://github.com/chocky18">
+        <img src="{% static 'portfolio/assets/icon-github.svg' %}" alt="GitHub" class="icon">
+    </a>
+    <a href="mailto:nareshtinnaluri7365@gmail.com">
+        <img src="{% static 'portfolio/assets/icon-email.svg' %}" alt="email" class="icon">
+    </a>
+    <a href="https://nirmataneurotech.com/">
+        <img src="{% static 'portfolio/assets/images.png' %}" alt="website" class="icon">
+    </a>
+    <a href="https://www.linkedin.com/in/naresh-t-85725012a/">
+        <img src="{% static 'portfolio/assets/icon-linkedin.svg' %}" alt="LinkedIn" class="icon">
+    </a>
+    <a href="https://chockynaresh18.wixsite.com/consciousai">
+        <img src="{% static 'portfolio/assets/4922073.png' %}" alt="blog" class="icon">
+    </a>
+    <a href="https://www.instagram.com/chocky_.18/">
+        <img src="{% static 'portfolio/assets/icon-instagram.svg' %}" alt="instagram" class="icon">
+    </a>
+
+</div>
+
+<style>
+    .icon-links {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        gap: 20px; /* Adjust the spacing between icons as needed */
+        height: 20vh;/* Adjust the spacing between icons as needed */
+    }
+
+    .icon {
+        width: 32px; /* Adjust the size of the icons as needed */
+        height: 32px;
+    }
+</style>
+                    </div>
+                </div>
+            </section>
+            <!-- Call to action section-->
+            <section class="py-5 bg-gradient-primary-to-secondary text-white">
+                <div class="container px-5 my-5">
+                    <div class="text-center">
+                        <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="{% url 'contact' %}">Contact me</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; Your Website 2023</div></div>
+                    <div class="col-auto">
+
+                        <a class="small" href="{% url 'details' %}">My contact Details</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'portfolio/js/scripts.js' %}"></script>
+    </body>
+</html>

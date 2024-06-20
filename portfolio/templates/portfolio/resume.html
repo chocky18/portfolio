@@ -1,0 +1,349 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Naresh Tinnaluri's Portfolio</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'portfolio/assets/favicon.ico' %}" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'portfolio/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100 bg-light">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="{% url 'index' %}"><span class="fw-bolder text-primary">Naresh Tinnaluri</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'resume' %}">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'projects' %}">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Any Queries</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'details' %}">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page Content-->
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-11 col-xl-9 col-xxl-8">
+                        <!-- Experience Section-->
+                        <section>
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h2 class="text-primary fw-bolder mb-0">Experience</h2>
+                                <!-- Download resume button-->
+                                <!-- Note: Set the link href target to a PDF file within your project-->
+                                <a class="btn btn-primary px-4 py-3" href="{% static 'portfolio/assets/nareshtinnaluri.pdf' %}">
+                                    <div class="d-inline-block bi bi-download me-2"></div>
+                                    Download Resume
+                                </a>
+                            </div>
+                            <!-- Experience Card 1-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">Jan 2024 - Present</div>
+                                                <div class="small fw-bolder">Deep Learning Engineer/ Founder</div>
+                                                <div class="small text-muted">Nirmata Neurotech</div>
+                                                <div class="small text-muted">Hyderabad</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div><strong>Skills</strong>: Deep Learning · bci · Neuroscience · Virtual Reality (VR) · Artificial Intelligence (AI) · Early-Stage Startups · Startup Development · Stable Diffusion</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Experience Card 2-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">May 2023 - Dec 2023</div>
+                                                <div class="small fw-bolder">AI Engineer</div>
+                                                <div class="small text-muted">Workplete (Persist Ventures) </div>
+                                                <div class="small text-muted"> Los Angeles, California</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div><strong>Skills</strong>: Python (Programming Language) · Deep Learning · Large Language Models (LLM) · Computer Vision · ChatGPT · React.js</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Experience Card 3-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">Apr 2023 - Sep 2023</div>
+                                                <div class="small fw-bolder">Computer Vision Research Engineer</div>
+                                                <div class="small text-muted">Upwork (Freelance) </div>
+                                                <div class="small text-muted"> Los Angeles, California</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div><strong>Skills</strong>: Deep Learning · Large Language Models (LLM) · Object Detection · Vision model · Computer Vision · ChatGPT · OpenCV</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Experience Card 4-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">May 2023 - Dec 2023</div>
+                                                <div class="small fw-bolder">Deep Learning Researcher</div>
+                                                <div class="small text-muted">Aristocrat</div>
+                                                <div class="small text-muted">Chennai</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div><strong>Skills</strong>: Deep Learning · Large Language Models (LLM) · Vision model · Computer Vision · ChatGPT · OpenCV · AWS</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Experience Card 7-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">Aug 2022 - Nov 2022</div>
+                                                <div class="small fw-bolder">Computer Vision Engineer</div>
+                                                <div class="small text-muted">ZestIoT: IoT/AI powered connected operations platform</div>
+                                                <div class="small text-muted">Hyderabad</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div><strong>Skills</strong>: Deep Learning · Large Language Models (LLM) · Vision model · Computer Vision · ChatGPT · OpenCV · AWS · Recurrent Neural Networks (RNN) · Convolutional Neural Networks (CNN) · OpenCV · Computer Science</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Experience Card 7-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">Jan 2018 - Jul 2020</div>
+                                                <div class="small fw-bolder">Computer Vision Engineer</div>
+                                                <div class="small text-muted">Artenal</div>
+                                                <div class="small text-muted">Vancouver, BC </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div><strong>Skills</strong>: Deep Learning · Large Language Models (LLM) · Vision model · Computer Vision · ChatGPT · OpenCV · AWS · Recurrent Neural Networks (RNN) · Convolutional Neural Networks (CNN) · OpenCV · Computer Science</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Experience Card 8-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">Jan 2018 - Jul 2020</div>
+                                                <div class="small fw-bolder">Python Developer</div>
+                                                <div class="small text-muted">SMG InfoTech</div>
+                                                <div class="small text-muted">Hyderabad </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div><strong>Skills</strong>: Deep Learning · Large Language Models (LLM) · Vision model · Computer Vision · ChatGPT · OpenCV · AWS · Recurrent Neural Networks (RNN) · Convolutional Neural Networks (CNN) · OpenCV · Computer Science</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Experience Card 8-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">Jan 2019 - Jun 2024</div>
+                                                <div class="small fw-bolder">AI Engineer</div>
+                                                <div class="small text-muted">Freelance projects</div>
+                                                <div class="small text-muted">Remote</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div><strong>Skills</strong>: Deep Learning · Large Language Models (LLM) · Vision models · Computer Vision · ChatGPT · OpenCV · AWS · Recurrent Neural Networks (RNN) · Convolutional Neural Networks (CNN) · OpenCV · Computer Science · Neuroscience ·Signal Processing · Reinforcement learning</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Education Section-->
+                        <section>
+                            <h2 class="text-secondary fw-bolder mb-4">Education</h2>
+                            <!-- Education Card 1-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-secondary fw-bolder mb-2">2020 - 2022</div>
+                                                <div class="mb-2">
+                                                    <div class="small fw-bolder">International Institute of Information Technology Bangalore</div>
+                                                    <div class="small text-muted">Bangalore</div>
+                                                </div>
+                                                <div class="fst-italic">
+                                                    <div class="small text-muted">Postgraduate Degree</div>
+<!--                                                    <div class="small text-muted">Data Science,Specialization in Deep Learning</div>-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>Data Science,Specialization in Deep Learning <p>Grade: 3.3/4</p></div></div>
+                                    </div>
+                                </div>
+                            </div>
+<!--                            &lt;!&ndash; Education Card 2&ndash;&gt;-->
+<!--                            <div class="card shadow border-0 rounded-4 mb-5">-->
+<!--                                <div class="card-body p-5">-->
+<!--                                    <div class="row align-items-center gx-5">-->
+<!--                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">-->
+<!--                                            <div class="bg-light p-4 rounded-4">-->
+<!--                                                <div class="text-secondary fw-bolder mb-2">2011 - 2015</div>-->
+<!--                                                <div class="mb-2">-->
+<!--                                                    <div class="small fw-bolder">ULA</div>-->
+<!--                                                    <div class="small text-muted">Los Angeles, CA</div>-->
+<!--                                                </div>-->
+<!--                                                <div class="fst-italic">-->
+<!--                                                    <div class="small text-muted">Undergraduate</div>-->
+<!--                                                    <div class="small text-muted">Computer Science</div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+                        </section>
+                        <!-- Divider-->
+                        <div class="pb-5"></div>
+                        <!-- Skills Section-->
+                        <section>
+                            <!-- Skillset Card-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <!-- Professional skills list-->
+                                    <div class="mb-5">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional Skills</span></h3>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">AI & Machine Learning</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Data Analysis & Modeling</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Computer Vision</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Cloud Platforms (AWS, SageMaker)</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">NLP Techniques</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Deployment Strategies</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Flutter Development</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CUDA Programming</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Multi-Agent Workflows(LangGraph and LangChain)</div></div>
+<!--                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"></div></div>-->
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Neurotech Applications</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Signal Processing</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">VR Development</div></div>
+                                        </div>
+                                    </div>
+                                    <!-- Languages list-->
+                                    <div class="mb-0">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-code-slash"></i></div>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span></h3>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Python</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">TensorFlow & PyTorch</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JavaScript</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Flutter</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">MATLAB</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Node.js</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="icon-links">
+    <a href="https://github.com/chocky18">
+        <img src="{% static 'portfolio/assets/icon-github.svg' %}" alt="GitHub" class="icon">
+    </a>
+    <a href="mailto:nareshtinnaluri7365@gmail.com">
+        <img src="{% static 'portfolio/assets/icon-email.svg' %}" alt="email" class="icon">
+    </a>
+    <a href="https://nirmataneurotech.com/">
+        <img src="{% static 'portfolio/assets/images.png' %}" alt="website" class="icon">
+    </a>
+    <a href="https://www.linkedin.com/in/naresh-t-85725012a/">
+        <img src="{% static 'portfolio/assets/icon-linkedin.svg' %}" alt="LinkedIn" class="icon">
+    </a>
+    <a href="https://chockynaresh18.wixsite.com/consciousai">
+        <img src="{% static 'portfolio/assets/4922073.png' %}" alt="blog" class="icon">
+    </a>
+    <a href="https://www.instagram.com/chocky_.18/">
+        <img src="{% static 'portfolio/assets/icon-instagram.svg' %}" alt="instagram" class="icon">
+    </a>
+
+</div>
+
+<style>
+    .icon-links {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        gap: 20px; /* Adjust the spacing between icons as needed */
+        height: 20vh;/* Adjust the spacing between icons as needed */
+    }
+
+    .icon {
+        width: 32px; /* Adjust the size of the icons as needed */
+        height: 32px;
+    }
+</style>
+            </div>
+
+        </main>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; MyPortfolio</div></div>
+                    <div class="col-auto">
+                        <a class="small" href="#!">Privacy</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Terms</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Contact</a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'portfolio/js/scripts.js' %}"></script>
+    </body>
+</html>

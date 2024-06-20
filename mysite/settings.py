@@ -27,7 +27,8 @@ DEBUG = True
 
 
 
-ALLOWED_HOSTS = ['yourdomain.com', 'localhost', 'portfolio-d734.onrender.com']
+ALLOWED_HOSTS = ['yourdomain.com', 'localhost', 'portfolio-d734.onrender.com', 'portfolio-xxx5.onrender.com']
+
 
 # Application definition
 

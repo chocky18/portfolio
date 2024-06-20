@@ -1,11 +1,20 @@
+# services:
+#   - type: web
+#     name: mysite
+#     env: python
+#     buildCommand: ""
+#     startCommand: gunicorn portfolio.wsgi:application --log-file -
+#     envVars:
+#       - key: DJANGO_SETTINGS_MODULE
+#         value: mysite.settings
+#       - key: SECRET_KEY
+#         sync: false
+# # render.yaml
+
 services:
-  - type: web
-    name: mysite
-    env: python
-    buildCommand: ""
-    startCommand: gunicorn portfolio.wsgi:application --log-file -
+  - name: web
     envVars:
-      - key: DJANGO_SETTINGS_MODULE
-        value: mysite.settings
-      - key: SECRET_KEY
-        sync: false
+      - key: DJANGO_ENVIRONMENT
+        value: production
+    buildCommand: python manage.py collectstatic --noinput
+    startCommand: gunicorn mysite.wsgi --bind 0.0.0.0:$PORT

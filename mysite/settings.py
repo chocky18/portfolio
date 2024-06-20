@@ -121,7 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    "/home/chocky/Desktop/portfolio/startbootstrap-personal-gh-pages/mysite/portfolio/static/",
+    "portfolio/static",
 ]
 
 # Default primary key field type

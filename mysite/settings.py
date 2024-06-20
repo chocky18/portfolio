@@ -57,7 +57,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            '/home/chocky/Desktop/portfolio/startbootstrap-personal-gh-pages/mysite/portfolio/templates',
+            os.path.join(BASE_DIR, 'portfolio/templates'),
           ],
         'APP_DIRS': True,
         'OPTIONS': {

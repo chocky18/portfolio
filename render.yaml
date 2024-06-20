@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: portfolio
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn portfolio.wsgi:application --log-file -
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: mysite.settings
+      - key: SECRET_KEY
+        sync: false

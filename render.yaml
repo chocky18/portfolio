@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: portfolio
+    name: mysite
     env: python
     buildCommand: ""
     startCommand: gunicorn portfolio.wsgi:application --log-file -

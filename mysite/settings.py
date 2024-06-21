@@ -127,7 +127,7 @@ STATIC_URL = '/static/'
 # STATICFILES_DIRS = [
 #     "portfolio/portfolio/static",
 # ]
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),]
 # Ensure STATIC_ROOT is defined and set correctly for production deployment
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 

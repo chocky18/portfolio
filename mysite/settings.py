@@ -132,7 +132,7 @@ STATICFILES_DIRS = [
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Ensure ALLOWED_HOSTS includes your Render domain
-ALLOWED_HOSTS = ['yourdomain.com', 'portfolio-xxx5.onrender.com']
+ALLOWED_HOSTS = ['yourdomain.com', 'portfolio-xxx5.onrender.com', '.vercel.app']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
